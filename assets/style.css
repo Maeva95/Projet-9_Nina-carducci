@@ -101,8 +101,9 @@ nav a {
 .gallery .nav {
 	justify-content: center;
 }
+/* modification de la couleur du texte en noir au lieu du blance du lien actif car très faible contraste entre le texte et la couleur de l'arrière-plan */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -245,6 +246,24 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	padding-inline: 100px;
+	padding-block: 30px;
+}
+footer h3{
+	font-size: 16px;
+	font-weight: 700;
+}
+footer ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer ul li {
+	list-style: none;
+	font-size: 14px;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -256,7 +275,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p {
 		width: 100%;
 	}
 }
@@ -318,6 +337,12 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+	footer {
+		padding-inline: 50px;
+	}
+	footer ul {
+		gap: 20px;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -352,6 +377,19 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	footer {
+		padding-inline: 0;
+
+	}
+	
+	footer ul {
+		width: 100%;
+		flex-direction: column;
+		gap: 20px;
+	}
+	footer ul li{
+		text-align: center;
 	}
 }
 
