@@ -1,5 +1,5 @@
 # GZIP Apache 2.0 (vérifier la version du serveur)
-# BEGIN GZIP
+# BEGIN GZIP (activation de la compression Gzip)
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
 
@@ -9,15 +9,15 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 # END GZIP
 
-# CACHE NAVIGATEUR
+# CACHE NAVIGATEUR (paramétrage des en-têtes Cache-Control)
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
- <FilesMatch "\.(ico|jpe?g|png|webp|gif|swf|css|gz)$">
- Header set Cache-Control "max-age=2592000, public"
- </FilesMatch>
- <FilesMatch "\.(js)$">
- Header set Cache-Control "max-age=2592000, private"
- </FilesMatch>
+<FilesMatch "\.(ico|jpe?g|png|webp|gif|swf|css|gz)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
 <filesMatch "\.(html|htm)$">
 Header set Cache-Control "max-age=7200, public"
 </filesMatch>
@@ -28,7 +28,7 @@ Header unset Cache-Control
 </IfModule>
 # END Cache-Control Headers
 
-# BEGIN Expires Headers
+# BEGIN Expires Headers (paramétrage des en-têtes Expires)
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType image/jpg "access plus 1 month"
