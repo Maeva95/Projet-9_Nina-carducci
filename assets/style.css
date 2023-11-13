@@ -6,6 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
 header {
 	background-color: white;
 	position: sticky;
@@ -84,10 +89,10 @@ nav a {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	margin-bottom: 1rem;
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
 }
 
 /* #gallery {
@@ -257,6 +262,8 @@ footer h3{
 footer ul {
 	display: flex;
 	justify-content: space-between;
+	padding: 0;
+	gap: 7px;
 }
 
 footer ul li {
