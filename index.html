@@ -2,11 +2,14 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preload" as="style" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" as="style" href="./assets/style/style.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 	<meta name="google-site-verification" content="BVhqVfvRqIwTsenIJwknOocfTUC2E8MO-c8aMIU7NFo">
 	<meta charset="UTF-8">
 	<meta name="robots" content="index">
@@ -14,13 +17,50 @@
 	<meta property="og:title" content="Nina Carducci - Photographe">
 	<meta property="og:type" content="photos">
 	<meta property="og:description" content="Photographe passionnée par mon métier, je saisis les instants de vos événements ou de vos vies à travers des photographies.">
+	<meta property="og:image" content="./assets/images/nina-carducci.webp">
 	<meta property="author" content="Nina Carducci">
 	<meta property="og:url" content="https://maeva95.github.io/Projet-9_Nina-carducci/">
-	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
-	<title>Nina Carducci - photographe passionnée</title>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+            "@type": "Service",
+			"provider": {
+				"@type":"LocalBusiness",
+				"name": "Nina Carducci - Photographe située à Bordeaux",
+				"image": "./assets/images/nina-carducci.webp",
+				"url": "https://maeva95.github.io/Projet-9_Nina-carducci/",
+				"telephone": "0556677889",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "68 avenue Alsace-Lorraine",
+					"addressLocality": "Bordeaux",
+					"postalCode": "33200"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": "44.8466732",
+					"longitude": "-0.6065805"
+				},
+				"openingHoursSpecification": {
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+					],
+					"opens": "10:00",
+					"closes": "19:00"
+				}
+			}			
+		}	
+	</script>
+	<title>Nina Carducci - Photographe passionnée</title>
 </head>
 <body>
 <header>
@@ -44,15 +84,15 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<picture class="carousel-item active">
 					<img src="./assets/images/slider/slider-tokyo-2.webp" class="d-block w-100" alt="photo d'une rue de Tokyo" >
-				</div>
-				<div class="carousel-item">
+				</picture>
+				<picture class="carousel-item">
 					<img src="./assets/images/slider/slider-concert-2.webp" class="d-block w-100" loading="lazy" alt="photo d'un public lors d'un concert">
-				</div>
-				<div class="carousel-item">
+				</picture>
+				<picture class="carousel-item">
 					<img src="./assets/images/slider/slider-mariage-2.webp" class="d-block w-100" loading="lazy" alt="photo de mariès à la sortie d'une église">
-				</div>
+				</picture>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,9 +105,9 @@
 		</div>
 	</div>
 	<section id="about" itemscope itemtype="https://schema.org/Person" >
-		<div class="picture left">
-			<img src="./assets/images/nina-carducci.webp" alt="photo de Nina Carducci - photographe" itemprop="image">
-		</div>
+		<picture class="picture left">
+			<img src="./assets/images/nina-carducci.webp" alt="photo de Nina Carducci - photographe" loading="lazy" itemprop="image">
+		</picture>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
 			<em class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</em>
@@ -75,10 +115,10 @@
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</section>
-	<section id="gallery">
+	<section id="gallery" itemscope itemtype = "https://schema.org/CreativeWork">
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
-			<div class="gallery" style="display: none">
+			<div class="gallery" style="display: none" >
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert-1-aaron_paul.webp" alt="photo d'un concert">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise-ali-morshedlou_chef_entreprise.webp" alt="portrait d'un chef d'entreprise ">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise-DRH.webp" alt="photo d'une DRH">
@@ -101,8 +141,8 @@
 	</section>
 	<section id="services">
 		<h2 class="title" itemscope itemtype = "https://schema.org/Service">Mes services</h2>
-		<div class="container" itemscope itemtype = "https://schema.org/Offer">
-			<div class="service">
+		<div class="container">
+			<div class="service" itemprop = "offers" itemscope itemtype = "https://schema.org/Offer">
 				<div class="service__description">
 					<h3 itemprop="name">Shooting photo</h3>
 					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable, je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -113,7 +153,7 @@
 					<span>Matériel, déplacement inclus</span>
 				</div>
 			</div>
-			<div class="service">
+			<div class="service" itemprop = "offers" itemscope itemtype = "https://schema.org/Offer">
 				<div class="service__description">
 					<h3 itemprop="name">Retouches</h3>
 					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -124,7 +164,7 @@
 					<span>2 AR par photo</span>
 				</div>
 			</div>
-			<div class="service">
+			<div class="service" itemprop = "offers" itemscope itemtype = "https://schema.org/Offer">
 				<div class="service__description">
 					<h3 itemprop="name">Album photos</h3>
 					<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -160,29 +200,26 @@
 					<input type="submit" value="Envoyer">
 				</form>
 			</div>
-			<div class="picture right">
+			<picture class="picture right">
 				<img src="./assets/images/camera.webp" alt="photo d'un appareil photo">
-			</div>
+			</picture>
 		</div>
 	</section>
 </main>
 <footer>
-	<ul itemscope itemtype="https://schema.org/Organization">
+	<ul>
 		<li>
-			<h2 itemprop="name">Nina Carducci</h2>
-		</li>
-		<li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 			<h3>Adresse</h3>
-			<p itemprop="streetAddress">68 avenue Alsace-Lorraine</p>
-			<p itemprop="addressLocality">33200 Bordeaux</p>
+			<p>68 avenue Alsace-Lorraine</p>
+			<p>33200 Bordeaux</p>
 		</li>
 		<li>
 			<h3>Numéro de téléphone</h3>
-			<p itemprop="telephone">05 56 67 78 89</p>
+			<a href="tel:0556677889">05 56 67 78 89</a>
 		</li>
-		<li itemscope itemtype = "https://schema.org/OpeningHoursSpecification">
+		<li >
 			<h3>Horaires</h3>
-			<p itemprop = "dayOfWeek">Du lundi au vendredi de <time itemprop = "opens" content = "10:00:00" >10h</time> à <time itemprop = "closes" content = "19:00:00">19h</time></p>
+			<meta> Du Lundi au Vendredi de 10h à 19h
 		</li>
 	</ul>
 </footer>
