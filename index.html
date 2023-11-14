@@ -3,8 +3,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preload" as="style" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="preload" as="style" href="./assets/style/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="all">
+	<link rel="preload" as="style" href="./assets/style/style.css" media="all">
 	<link rel="stylesheet" href="./assets/style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,13 +85,13 @@
 			</div>
 			<div class="carousel-inner">
 				<picture class="carousel-item active">
-					<img src="./assets/images/slider/slider-tokyo-2.webp" class="d-block w-100" alt="photo d'une rue de Tokyo" >
+					<img alt="photo d'une rue de Tokyo" src="./assets/images/slider/slider-tokyo-big.webp" data-sizes="auto" data-srcset="./assets/images/slider/slider-tokyo-4.webp" class="d-block w-100 lazyload" >
 				</picture>
 				<picture class="carousel-item">
-					<img src="./assets/images/slider/slider-concert-2.webp" class="d-block w-100" loading="lazy" alt="photo d'un public lors d'un concert">
+					<img alt="photo d'un public lors d'un concert" src="./assets/images/slider/slider-concert-2.webp" class="d-block w-100" loading="lazy" >
 				</picture>
 				<picture class="carousel-item">
-					<img src="./assets/images/slider/slider-mariage-2.webp" class="d-block w-100" loading="lazy" alt="photo de mariès à la sortie d'une église">
+					<img alt="photo de mariès à la sortie d'une église" src="./assets/images/slider/slider-mariage-2.webp" class="d-block w-100" loading="lazy" >
 				</picture>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -106,7 +106,7 @@
 	</div>
 	<section id="about" itemscope itemtype="https://schema.org/Person" >
 		<picture class="picture left">
-			<img src="./assets/images/nina-carducci.webp" alt="photo de Nina Carducci - photographe" loading="lazy" itemprop="image">
+			<img alt="photo de Nina Carducci - photographe" class="lazyload" src="./assets/images/nina-big.webp" data-sizes="auto" data-srcset="./assets/images/nina-carducci.webp 576w" itemprop="image">
 		</picture>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -119,15 +119,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none" >
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert-1-aaron_paul.webp" alt="photo d'un concert">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise-ali-morshedlou_chef_entreprise.webp" alt="portrait d'un chef d'entreprise ">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise-DRH.webp" alt="photo d'une DRH">
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mariage-mains_maries.webp" alt="photo de mains de mariés qui se rejoignent ">
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.webp" alt="portrait d'un homme">
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mariage-maries.webp" alt="portrait de jeunes mariés">
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-fille.webp" alt="portrait d''une femme">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert-2-austin_neill.webp" alt="photo d'un concert">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise-equipe_developpement.webp" alt="photo d'entreprise - équipe de développement">
+				<img data-gallery-tag="Concert" class="gallery-item lazyload" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-1-big.jpg" data-sizes ="auto" data-srcset ="./assets/images/gallery/concerts/concert-aaron_paul.webp 576w">
+				<img data-gallery-tag="Entreprises" class="gallery-item lazyload" alt="portrait d'un chef d'entreprise" src="./assets/images/gallery/entreprise/entreprise-chef_entreprise-big.jpg" data-sizes ="auto" data-srcset="./assets/images/gallery/entreprise/entreprise-ali-morshedlou_chef_entreprise.webp 576w">
+				<img data-gallery-tag="Entreprises" class="gallery-item lazyload" alt="photo d'une DRH" src="./assets/images/gallery/entreprise/entreprise-DRH-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/entreprise/entreprise-DRH.webp 576w">
+				<img data-gallery-tag="Mariages" class="gallery-item lazyload" alt="photo de mains de mariés qui se rejoignent " src="./assets/images/gallery/mariage/mariage-mains_maries-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/mariage/mariage-mains_maries.webp 576w">
+				<img data-gallery-tag="Portrait" class="gallery-item lazyload" alt="portrait d'un homme" src="./assets/images/gallery/portraits/portrait-ade-tunji-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/portraits/portrait-ade-tunji.webp 576w">
+				<img data-gallery-tag="Mariages" class="gallery-item lazyload" alt="portrait de jeunes mariés" src="./assets/images/gallery/mariage/mariage-maries-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/mariage/mariage-maries.webp 576w">
+				<img data-gallery-tag="Portrait" class="gallery-item lazyload" alt="portrait d''une femme" src="./assets/images/gallery/portraits/portrait-fille-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/portraits/portrait-fille.webp 576w">
+				<img data-gallery-tag="Concert" class="gallery-item lazyload" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-2-big.webp" data-sizes ="auto" data-srcset="./assets/images/gallery/concerts/concert-2-austin_neill.webp 576w">
+				<img data-gallery-tag="Entreprises" class="gallery-item lazyload" alt="photo d'entreprise - équipe de développement" src="./assets/images/gallery/entreprise/entreprise-equipe_developpement-big.jpg" data-sizes ="auto" data-srcset="./assets/images/gallery/entreprise/entreprise-equipe_developpement.webp 576w">
 			</div>
 		</div>
 		<div class="quote">

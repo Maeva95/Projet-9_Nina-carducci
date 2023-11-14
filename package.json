@@ -4,6 +4,9 @@
     "purgecss": "^5.0.0"
   },
   "scripts": {
-    "build": "purgecss --css assets/bootstrap/bootstrap.css --content index.html --output assets/bootstrap/bootstrapMin/"
+    "build": "purgecss --css assets/bootstrap/bootstrap.min.css --content index.html --output assets/bootstrap/bootstrapMin/"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2"
   }
 }
