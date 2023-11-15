@@ -4475,7 +4475,7 @@
     h5: [],
     h6: [],
     i: [],
-    img: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
+    img: ['src', 'srcset', 'data-src', 'data-srcset', 'alt', 'title', 'width', 'height'],
     li: [],
     ol: [],
     p: [],
