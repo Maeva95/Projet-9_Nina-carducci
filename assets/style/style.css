@@ -40,7 +40,7 @@ nav a {
 
 .social-link img {
 	width: 20px;
-	height: auto;
+	height: 20px;
 }
 
 #about {
@@ -67,8 +67,12 @@ nav a {
 	margin: 0 20px;
 	z-index: 0;
 }
+.picture.left img {
+	max-width: 470px;
+	height: auto;
+}
 
-.picture img {
+.picture img, .carousel-item img{
 	width: 100%;
 	height: auto;
 }
@@ -271,6 +275,10 @@ footer ul li {
 	.picture {
 		flex : 2;
 	}
+	.picture.left img {
+		width: 400px;
+		height: auto;
+	}
 	
 	#about, #contact .container {
 		align-items: center;
@@ -388,7 +396,6 @@ footer ul li {
 		padding-inline: 0;
 
 	}
-	
 	footer ul {
 		width: 100%;
 		flex-direction: column;
