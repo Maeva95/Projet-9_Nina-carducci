@@ -4,6 +4,6 @@
     "purgecss": "^5.0.0"
   },
   "scripts": {
-    "build": "purgecss --css assets/bootstrap/bootstrap.min.css --content index.html --output assets/bootstrap/bootstrapMin/"
+    "build": "purgecss --css ./assets/bootstrap/bootstrap.css --content ./gallery/modal.html --output ./assets/bootstrap/bootstrapMin/"
   }
 }

@@ -67,14 +67,11 @@ nav a {
 	margin: 0 20px;
 	z-index: 0;
 }
-.picture.left img {
-	max-width: 470px;
-	height: auto;
-}
 
 .picture img, .carousel-item img{
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: contain;
 }
 
 #about-me {
@@ -274,10 +271,6 @@ footer ul li {
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
-	}
-	.picture.left img {
-		width: 400px;
-		height: auto;
 	}
 	
 	#about, #contact .container {
