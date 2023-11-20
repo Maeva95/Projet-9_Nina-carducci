@@ -9,8 +9,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 	<meta name="google-site-verification" content="BVhqVfvRqIwTsenIJwknOocfTUC2E8MO-c8aMIU7NFo">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-038ZQCD17Q"></script>
+	<meta name="language" content="fr-FR">
 	<meta name="robots" content="index">
 	<meta name="description" content="Photographe située à Bordeux passionnée par mon métier, je vous propose mes services (shooting photo, retouches etc..) pour saisir vos événements ou de vos vies à travers des photographies.">
+	<!--Mise en place du référencement sur les réseaux sociaux-->
 	<meta property="og:title" content="Nina Carducci - Photographe">
 	<meta property="og:type" content="photos">
 	<meta property="og:description" content="Photographe passionnée par mon métier, je saisis les instants de vos événements ou de vos vies à travers des photographies.">
@@ -21,14 +24,20 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+	<!--Mise en place du référencement local-->
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
             "@type": "Service",
 			"provider": {
 				"@type":"LocalBusiness",
-				"name": "Nina Carducci - Photographe située à Bordeaux",
-				"image": "./assets/images/nina-carducci.webp",
+				"name": "Nina Carducci - Photographe située à Bordeaux: shooting photos, retouches et création d'albums photo",
+				"image": [
+					"./assets/images/nina-carducci.webp",
+					"./assets/images/gallery/mariage/mariage-maries-380px.webp",
+					"./assets/images/gallery/entreprise/entreprise-DRH-380px.webp",
+					"./assets/images/gallery/portraits/portrait-homme-380px.webp"
+					]
 				"url": "https://maeva95.github.io/Projet-9_Nina-carducci/",
 				"telephone": "0556677889",
 				"address": {
@@ -39,8 +48,8 @@
 				},
 				"geo": {
 					"@type": "GeoCoordinates",
-					"latitude": "44.8466732",
-					"longitude": "-0.6065805"
+					"latitude": 44.8466732,
+					"longitude": -0.6065805
 				},
 				"openingHoursSpecification": {
 					"@type": "OpeningHoursSpecification",
@@ -68,7 +77,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="dofollow"><img src="assets/images/instagram.png" alt="logo Instagram" style="width: 20px; height: 20px;"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="dofollow"><img src="assets/images/instagram.png" alt="logo Instagram" width="20" height="20"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -84,17 +93,17 @@
 				<picture class="carousel-item active">
 					<source media="(min-width: 992px)" srcset="./assets/images/slider/slider-tokyo-900px.webp">
 					<source media="(max-width: 991px)" srcset="./assets/images/slider/slider-tokyo-big.webp">
-					<img alt="photo d'une rue de Tokyo" src="./assets/images/slider/slider-tokyo-900px.webp" class="d-block w-100" style="width: 100%; height: 100%">
+					<img alt="photo d'une rue de Tokyo" src="./assets/images/slider/slider-tokyo-900px.webp" class="d-block w-100" width="1920" height="888">
 				</picture>
 				<picture class="carousel-item">
 					<source media="(min-width: 992px)" srcset="./assets/images/slider/slider-concert-900px.webp">
 					<source media="(max-width: 991px)" srcset="./assets/images/slider/slider-concert-2.webp">
-					<img alt="photo d'un public lors d'un concert" src="./assets/images/slider/slider-concert-900px.webp" class="d-block w-100" loading="lazy">
+					<img alt="photo d'un public lors d'un concert" src="./assets/images/slider/slider-concert-900px.webp" class="d-block w-100" width="1920" height="888" loading="lazy" >
 				</picture>
 				<picture class="carousel-item">
 					<source media="(min-width: 992px)" srcset="./assets/images/slider/slider-mariage-900px.webp">
 					<source media="(max-width: 991px)" srcset="./assets/images/slider/slider-mariage-2.webp">
-					<img alt="photo de fête des mariès" src="./assets/images/slider/slider-mariage-900px.webp" class="d-block w-100" loading="lazy">
+					<img alt="photo de fête des mariès" src="./assets/images/slider/slider-mariage-900px.webp" class="d-block w-100" width="1920" height="888" loading="lazy">
 				</picture>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -111,11 +120,11 @@
 		<picture class="picture left">
 			<source media="(min-width: 769px)" srcset="./assets/images/nina-carducci-450px.webp">
 			<source media="(max-width: 768px)" srcset="./assets/images/nina-carducci-250-2px.webp">
-			<img alt="photo de Nina Carducci - photographe" src="./assets/images/nina-carducci-350px.webp" itemprop="image">
+			<img alt="photo de Nina Carducci - photographe" src="./assets/images/nina-carducci-250px.webp" itemprop="image" width="450" height="450">
 		</picture>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<em class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</em>
+			<em class="about-me__introduction">Je m'appelle Nina Carducci et je suis photographe à Bordeaux. Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</em>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
@@ -124,15 +133,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-scene-440px.webp" sizes="(max-width: 768px) 768px"  srcset ="./assets/images/gallery/concerts/concert-scene-380px.webp 380w, ./assets/images/gallery/concerts/concert-scene-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'un chef d'entreprise" src="./assets/images/gallery/entreprise/entreprise-directeur-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-directeur-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-directeur-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'une DRH" src="./assets/images/gallery/entreprise/entreprise-DRH-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-DRH-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-DRH-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Mariages" class="gallery-item" alt="photo de mains de mariés qui se rejoignent " src="./assets/images/gallery/mariage/mariage-mains_maries-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/mariage/mariage-mains_maries-380px.webp 380w, ./assets/images/gallery/mariage/mariage-mains_maries-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'un homme" src="./assets/images/gallery/portraits/portrait-homme-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/portraits/portrait-homme-380px.webp 380w, ./assets/images/gallery/portraits/portrait-homme-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Mariages" class="gallery-item" alt="portrait de jeunes mariés" src="./assets/images/gallery/mariage/mariage-maries-440px.webp" sizes="(max-width: 768px) 768px"  srcset="mariage-maries-380px.webp 380w, ./assets/images/gallery/mariage/mariage-maries-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d''une femme" src="./assets/images/gallery/portraits/portrait-fille-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/portraits/portrait-fille-380px.webp 380w, ./assets/images/gallery/portraits/portrait-fille-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Concert" class="gallery-item" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-chanteur-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/concerts/concert-chanteur-380px.webp 380w, ./assets/images/gallery/concerts/concert-chanteur-440px.webp 440w" loading="lazy" >
-				<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'entreprise - équipe de développement" src="./assets/images/gallery/entreprise/entreprise-dev-440px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-dev-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-dev-440px.webp 440w" loading="lazy" >
+				<img data-gallery-tag="Concert" class="gallery-item" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-scene-500px.webp" sizes="(max-width: 768px) 768px"  srcset ="./assets/images/gallery/concerts/concert-scene-380px.webp 380w, ./assets/images/gallery/concerts/concert-scene-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'un chef d'entreprise" src="./assets/images/gallery/entreprise/entreprise-directeur-500px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-directeur-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-directeur-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'une DRH" src="./assets/images/gallery/entreprise/entreprise-DRH-500px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-DRH-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-DRH-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Mariages" class="gallery-item" alt="photo de mains de mariés qui se rejoignent " src="./assets/images/gallery/mariage/mariage-mains_maries-500px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/mariage/mariage-mains_maries-380px.webp 380w, ./assets/images/gallery/mariage/mariage-mains_maries-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'un homme" src="./assets/images/gallery/portraits/portrait-homme-500px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/portraits/portrait-homme-380px.webp 380w, ./assets/images/gallery/portraits/portrait-homme-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Mariages" class="gallery-item" alt="portrait de jeunes mariés" src="./assets/images/gallery/mariage/mariage-maries-450px.webp" sizes="(max-width: 768px) 768px"  srcset="mariage-maries-380px.webp 380w, ./assets/images/gallery/mariage/mariage-maries-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d''une femme" src="./assets/images/gallery/portraits/portrait-fille-450px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/portraits/portrait-fille-380px.webp 380w, ./assets/images/gallery/portraits/portrait-fille-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Concert" class="gallery-item" alt="photo d'un concert" src="./assets/images/gallery/concerts/concert-chanteur-450px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/concerts/concert-chanteur-380px.webp 380w, ./assets/images/gallery/concerts/concert-chanteur-500px.webp 500w" loading="lazy" width="500" height="500">
+				<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'entreprise - équipe de développement" src="./assets/images/gallery/entreprise/entreprise-dev-500px.webp" sizes="(max-width: 768px) 768px"  srcset="./assets/images/gallery/entreprise/entreprise-dev-380px.webp 380w, ./assets/images/gallery/entreprise/entreprise-dev-500px.webp 500w" loading="lazy" width="500" height="500">
 			</div>
 		</div>
 		<div class="quote">
@@ -160,7 +169,7 @@
 			</div>
 			<div class="service" itemscope itemtype = "https://schema.org/Offer">
 				<div class="service__description">
-					<h3 itemprop="name">Retouches</h3>
+					<h3 itemprop="name">Retouches photos</h3>
 					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
@@ -208,7 +217,7 @@
 			<picture class="picture right">
 				<source media="(min-width: 769px)" srcset="./assets/images/camera.webp">
 				<source media="(min-width: 768px)" srcset="./assets/images/camera-250px.webp">
-				<img src="./assets/images/camera.webp" alt="photo d'un appareil photo">
+				<img src="./assets/images/camera.webp" alt="photo d'un appareil photo" width="450" height="450">
 			</picture>
 		</div>
 	</section>
@@ -230,5 +239,12 @@
 		</li>
 	</ul>
 </footer>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-038ZQCD17Q');
+</script>
 </body>
 </html>
